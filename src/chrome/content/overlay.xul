@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <overlay id="findflip" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-	<script type="application/x-javascript" src="chrome://findflip/content/findflip.js" />
-	<commandset id="mainCommandSet">
-		<command id="cmd_find" oncommand="findflip();" />
-	</commandset>
+    <script type="application/x-javascript" src="chrome://findflip/content/findflip.js" />
+    <commandset id="mainCommandSet">
+        <command id="cmd_find" oncommand="findflip();" />
+    </commandset>
 </overlay>
