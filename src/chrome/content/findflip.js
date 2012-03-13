@@ -1,9 +1,11 @@
 function findflip(openit) {
     var findbar = document.getElementById("FindToolbar");
-    if (typeof openit == 'undefined' && (findbar == null || findbar.hidden)) {
+    if (openit == null && (findbar == null || findbar.hidden)) {
         gFindBar.onFindCommand();
     } else {
-        findbar.close();
+        if (findbar) {
+            findbar.close();
+        }
     }
 }
 
