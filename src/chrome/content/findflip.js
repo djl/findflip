@@ -1,5 +1,5 @@
 function findflip(openit) {
-    var findbar = document.getElementById("FindToolbar");
+    var findbar = document.getElementById('FindToolbar');
     if (openit == null && (findbar == null || findbar.hidden)) {
         gFindBar.onFindCommand();
     } else if (findbar) {
@@ -7,4 +7,4 @@ function findflip(openit) {
     }
 }
 
-window.addEventListener('click', function() { findflip(false) }, false);
+window.addEventListener('click', function() { findflip('click') }, false);
