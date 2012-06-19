@@ -7,4 +7,8 @@ function findflip(openit) {
     }
 }
 
-window.addEventListener('click', function() { findflip('click') }, false);
+window.addEventListener('click', function(event) {
+    if (event.target.nodeName != 'findbar') {
+        findflip('click');
+    }
+}, false);
